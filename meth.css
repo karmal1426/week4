@@ -1,5 +1,14 @@
 div > *{
     border: 10px ridge red;
+    border-image-source: linear-gradient(90deg, red 50%, green 50%);
+    border-image-repeat: round;
+    border-image-width: 10px;
+    border-image-slice: 5;
+    border-image-outset: 2px;
+    /* background-color: red; */
+
+
+
 }
 
 div{
