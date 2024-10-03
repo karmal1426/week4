@@ -1,0 +1,30 @@
+div > *{
+    border: 10px ridge red;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-template-areas: 
+    "a a a"
+    "a a a"
+    "b b i"
+    "c h i"
+    "d f g"
+    "e e e"
+    ;
+}
+
+aside:nth-of-type(5){
+    grid-area: a;
+}
+aside:nth-of-type(1){
+    grid-area: b;
+}
+aside:nth-of-type(4){
+    grid-area: i;
+}
+aside:nth-of-type(2){
+    grid-area: e;
+}
